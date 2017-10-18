@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="MegaDesk_6_JonesCrossley.MainMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MegaDesk_6_JonesCrossley"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Horizontal" Padding="40">
+            <Button Content="Add New Quote" Name="AddNewQuote" Margin="10" Click="AddNewQuote_Click"/>
+            <Button Content="View Quotes" Name="ViewQuotes"  Margin="10" Click="ViewQuotes_Click" />
+            <Button Content="Search Quotes" Name="SearchQuotes"  Margin="10" Click="SearchQuotes_Click"/>
+            <Button Content="Exit" Name="Exit"  Margin="10" Click="Exit_Click"/>
+        </StackPanel>
+        
+
+    </Grid>
+</Page>

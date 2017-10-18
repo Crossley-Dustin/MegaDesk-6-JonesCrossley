@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="MegaDesk_6_JonesCrossley.DisplayQuote"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MegaDesk_6_JonesCrossley"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical" Padding="40">
+            <TextBlock Text="Customer Name"/>
+            <TextBlock Name="CustomerName"/>
+            <TextBlock Text="Quote Date"/>
+            <TextBlock Name="QuoteDate"/>
+            <TextBlock Text="Quote Amount"/>
+            <TextBlock Name="QuoteAmount"/>
+            <TextBlock Text="Rush Order Days"/>
+            <TextBlock Name="RushDays"/>
+            <TextBlock Text="Number Of Drawers"/>
+            <TextBlock Name="NumberDrawers"/>
+            <TextBlock Text="Surface Material"/>
+            <TextBlock Name="SurfaceMaterial"/>
+            <TextBlock Text="Desk Width in Inches"/>
+            <TextBlock Name="DeskWidth"/>
+            <TextBlock Text="Desk Depth in Inches"/>
+            <TextBlock Name="DeskDepth"/>
+            <Button Name="ReturnToSearch" Content="Return To Search" Click="ReturnToSearch_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
