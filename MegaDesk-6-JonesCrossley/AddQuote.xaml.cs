@@ -46,17 +46,23 @@ namespace MegaDesk_6_JonesCrossley
 
             DQuote.Desk.Width = int.Parse(DeskWidth.Text);
             DQuote.Desk.Depth = int.Parse(DeskDepth.Text);
-            DQuote.Desk.DrawerCount = Convert.ToInt32(NumberDrawers.SelectedItem);
-            string selectedComboSurface = SurfaceMaterial.SelectedItem.ToString();
-            bool comboSurfaceConverted;
-            comboSurfaceConverted = Enum.TryParse(selectedComboSurface, out Desk.DesktopMaterial selectedSurface);
-            if (comboSurfaceConverted)
+            if (NumberDrawers.Items[NumberDrawers.SelectedIndex] is ComboBoxItem NumDrawersItem)
+                DQuote.Desk.DrawerCount = Convert.ToInt32(NumDrawersItem.Content.ToString());
+            if (SurfaceMaterial.Items[SurfaceMaterial.SelectedIndex] is ComboBoxItem SurfaceItem)
             {
-                DQuote.Desk.Surface = selectedSurface;
+                string selectedComboSurface = SurfaceItem.Content.ToString();
+                bool comboSurfaceConverted;
+                comboSurfaceConverted = Enum.TryParse(selectedComboSurface, out Desk.DesktopMaterial selectedSurface);
+                if (comboSurfaceConverted)
+                {
+                    DQuote.Desk.Surface = selectedSurface;
+                }
             }
+            
 
             DQuote.CustomerName = CustomerName.Text;
-            DQuote.RushOrderDays = (DeskQuote.RushDays)Convert.ToInt32(RushDays.SelectedItem.ToString());
+            if (RushDays.Items[RushDays.SelectedIndex] is ComboBoxItem RushOrder)
+                DQuote.RushOrderDays = (DeskQuote.RushDays)Convert.ToInt32(RushOrder.Content.ToString());
 
             // Calculate the quote
             DQuote.CalculateDeskQuote();

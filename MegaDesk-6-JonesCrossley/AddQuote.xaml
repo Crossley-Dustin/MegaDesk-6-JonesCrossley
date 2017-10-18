@@ -16,11 +16,25 @@
             <TextBlock Text="Desk Depth in Inches" />
             <TextBox PlaceholderText="Enter Desk Depth in Inches" Name="DeskDepth"/>
             <TextBlock Text="Number of Drawers" />
-            <ComboBox Name="NumberDrawers"/>
+            <ComboBox Name="NumberDrawers">
+                <ComboBoxItem Content="0"/>
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="4"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="6"/>
+                <ComboBoxItem Content="7"/>
+            </ComboBox>
             <TextBlock Text="Surface Material" />
             <ComboBox Name="SurfaceMaterial"/>
             <TextBlock Text="Rush Order Days" />
-            <ComboBox Name="RushDays"/>
+            <ComboBox Name="RushDays">
+                <ComboBoxItem Content="0"/>
+                <ComboBoxItem Content="3"/>
+                <ComboBoxItem Content="5"/>
+                <ComboBoxItem Content="7"/>
+            </ComboBox>
             <Button Content="Save Quote and Return to Menu" Name="SaveReturn" Margin="0,10,10,10" Click="SaveReturn_Click"/>
             <Button Content="Cancel and Return to Menu" Name="CancelReturn" Margin="0,10,10,10" Click="CancelReturn_Click"/>
         </StackPanel>
