@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Newtonsoft.Json;
+using Windows.Storage;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -81,7 +82,7 @@ namespace MegaDesk_6_JonesCrossley
             SurfaceMaterial.ItemsSource = materials;
         }
 
-        private bool SaveToQuoteFile()
+        private async void SaveToQuoteFile()
         {
             // Save current quote details to a file
 
@@ -90,8 +91,12 @@ namespace MegaDesk_6_JonesCrossley
                 List<DeskQuote> list;
 
                 // Read the current JSON file and convert it to a list of quotes.
-                string JsonString = File.ReadAllText(App.QUOTES_FILE_NAME);
-                list = JsonConvert.DeserializeObject<List<DeskQuote>>(JsonString);
+                StorageFolder folder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+                StorageFile file = await folder.GetFileAsync(App.QUOTES_FILE_NAME);
+                string readFile = await FileIO.ReadTextAsync(file);
+
+                //string JsonString = File.ReadAllText(App.QUOTES_FILE_NAME);
+                list = JsonConvert.DeserializeObject<List<DeskQuote>>(readFile);
 
                 // If there are no quotes in the file, set the list to empty rather than null (we need a reference to the list).
                 if (list == null)
@@ -104,16 +109,14 @@ namespace MegaDesk_6_JonesCrossley
                 // Serialize the entire list to a string. Format it so it looks purty.
                 string outputJSON = JsonConvert.SerializeObject(list, Formatting.Indented);
                 // Write all the text back out to the JSON file. We are not appending. We are overwriting the entire file.
-                File.WriteAllText(App.QUOTES_FILE_NAME, outputJSON);
+                await FileIO.WriteTextAsync(file, outputJSON);
+                //File.WriteAllText(App.QUOTES_FILE_NAME, outputJSON);
+
             }
             catch (Exception e)
             {
                 throw e;
             }
-            return true;
-
-
-
         }
     }
 }
