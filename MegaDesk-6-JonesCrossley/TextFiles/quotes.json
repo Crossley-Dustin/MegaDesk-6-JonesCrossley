@@ -1,1 +1,38 @@
-﻿
+﻿[
+  {
+    "Desk": {
+      "Width": 96,
+      "Depth": 24,
+      "DrawerCount": 7,
+      "Surface": 125
+    },
+    "CustomerName": "Comfy Furniture Co",
+    "RushOrderDays": 7,
+    "QuoteAmount": 2019.0,
+    "QuoteDate": "2017-10-07T14:05:33.5658639-07:00"
+  },
+  {
+    "Desk": {
+      "Width": 92,
+      "Depth": 24,
+      "DrawerCount": 7,
+      "Surface": 50
+    },
+    "CustomerName": "Speedy Furniture Inc",
+    "RushOrderDays": 3,
+    "QuoteAmount": 1888.0,
+    "QuoteDate": "2017-10-07T14:12:25.5602497-07:00"
+  },
+  {
+    "Desk": {
+      "Width": 96,
+      "Depth": 22,
+      "DrawerCount": 3,
+      "Surface": 125
+    },
+    "CustomerName": "AAA Furniture Co",
+    "RushOrderDays": 5,
+    "QuoteAmount": 1647.0,
+    "QuoteDate": "2017-10-07T23:37:45.3224356-07:00"
+  }
+]

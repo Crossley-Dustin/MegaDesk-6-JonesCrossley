@@ -100,26 +100,6 @@ namespace MegaDesk_6_JonesCrossley
                     }
                 }
 
-                //// Uses one loop through the raw array.
-                //int i = 0;
-                //int j = 0;
-                //foreach (string s in readPrices)
-                //{
-                //    if (j > 2)
-                //    {
-                //        // reset for next group of 3 (next row, first column)
-                //        i++;
-                //        j = 0;
-                //    }
-
-                //    if (j <= 2)
-                //    {
-                //        rushOrder[i, j] = Convert.ToInt32(s);
-                //        // advance to next column
-                //        j++;
-                //    }
-                //}
-
                 rushOrderPrice = rushOrder;
                 return true;
             }

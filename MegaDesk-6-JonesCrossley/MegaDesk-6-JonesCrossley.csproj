@@ -119,9 +119,9 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="MegaDesk-6-JonesCrossley_TemporaryKey.pfx" />
-    <AdditionalFiles Include="TextFiles\quotes.json">
+    <Content Include="TextFiles\quotes.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AdditionalFiles>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Default.rd.xml" />

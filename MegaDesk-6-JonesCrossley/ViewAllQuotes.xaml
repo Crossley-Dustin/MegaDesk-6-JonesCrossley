@@ -7,9 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loading="Grid_Loading">
         <StackPanel Orientation="Vertical" Padding="40">
-            <GridView Name="FileContents" MinHeight="100" Height="Auto" MinWidth="100" VerticalAlignment="Top"/>
+            <TextBlock Name="FileContents" MinHeight="100" Height="Auto" MinWidth="100" VerticalAlignment="Top"/>
             <Button Name="ReturnToMainMenu" Content="Return to Menu" Click="ReturnToMainMenu_Click"/>
         </StackPanel>
         
