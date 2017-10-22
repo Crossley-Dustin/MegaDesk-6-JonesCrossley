@@ -9,6 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loading="Grid_Loading">
         <StackPanel Orientation="Vertical" Padding="40">
+            <StackPanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
+            </StackPanel.Background>
             <TextBlock Text="Search by Surface Material"/>
             <ComboBox Name="SurfaceMaterial" Margin="0,10,10,10" SelectionChanged="SurfaceMaterial_SelectionChanged"/>
             <ListView x:Name="QuotesList" Height="Auto" MinHeight="300" DisplayMemberPath="CustomerName"/>

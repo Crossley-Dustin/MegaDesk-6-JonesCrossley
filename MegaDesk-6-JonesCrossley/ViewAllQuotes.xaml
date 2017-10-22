@@ -9,6 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loading="Grid_Loading">
         <StackPanel Orientation="Vertical" Padding="40">
+            <StackPanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
+            </StackPanel.Background>
             <TextBlock Name="FileContents" MinHeight="100" Height="Auto" MinWidth="100" VerticalAlignment="Top"/>
             <Button Name="ReturnToMainMenu" Content="Return to Menu" Click="ReturnToMainMenu_Click"/>
         </StackPanel>

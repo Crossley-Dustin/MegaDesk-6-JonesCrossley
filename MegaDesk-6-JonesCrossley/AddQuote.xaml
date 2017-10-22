@@ -9,6 +9,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <StackPanel Orientation="Vertical" Padding="40">
+            <StackPanel.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
+            </StackPanel.Background>
             <TextBlock Text="Customer Name" />
             <TextBox PlaceholderText="Enter Customer Name" Name="CustomerName"/>
             <TextBlock Text="Desk Width in Inches" />
@@ -38,6 +41,6 @@
             <Button Content="Save Quote and Return to Menu" Name="SaveReturn" Margin="0,10,10,10" Click="SaveReturn_Click"/>
             <Button Content="Cancel and Return to Menu" Name="CancelReturn" Margin="0,10,10,10" Click="CancelReturn_Click"/>
         </StackPanel>
-       
+
     </Grid>
 </Page>
