@@ -7,16 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loading="Grid_Loading">
-        <StackPanel Orientation="Vertical" Padding="40">
-            <StackPanel.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
-            </StackPanel.Background>
-            <TextBlock Text="Search by Surface Material"/>
-            <ComboBox Name="SurfaceMaterial" Margin="0,10,10,10" SelectionChanged="SurfaceMaterial_SelectionChanged"/>
-            <ListView x:Name="QuotesList" Height="Auto" MinHeight="300" DisplayMemberPath="CustomerName"/>
-            <Button Name="ViewQuote" Content="View Selected Quote" Margin="0,10,10,10" Click="ViewQuote_Click"/>
-            <Button Name="ReturnToMenu" Content="Return To Main Menu" Margin="0,10,10,10" Click="ReturnToMenu_Click"/>
-        </StackPanel>
+    <Grid Loading="Grid_Loading">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
+        </Grid.Background>
+
+
+
+
+        <TextBlock Text="Search by Surface Material" Margin="357,47,349,532" FontFamily="Trebuchet MS" FontSize="24" TextAlignment="Center" Foreground="White"/>
+        <ComboBox Name="SurfaceMaterial" Margin="449,113,0,0" SelectionChanged="SurfaceMaterial_SelectionChanged" Width="130" Height="30" Foreground="White"/>
+        <ListView x:Name="QuotesList" MinHeight="300" DisplayMemberPath="CustomerName" SelectionChanged="QuotesList_SelectionChanged" Margin="97,174,98,166" Foreground="White" BorderBrush="White"/>
+        <Button Name="ViewQuote" Content="View Selected Quote" Click="ViewQuote_Click" Margin="320,517,0,90" Width="170" Height="30" BorderBrush="White" Foreground="White"/>
+        <Button x:Name="ReturnToMenu" Content="Return To Main Menu" Click="ReturnToMenu_Click" Margin="535,517,0,90" Width="170" Height="30" BorderBrush="White" Foreground="White"/>
+
     </Grid>
 </Page>

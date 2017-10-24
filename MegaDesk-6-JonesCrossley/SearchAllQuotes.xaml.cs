@@ -126,5 +126,10 @@ namespace MegaDesk_6_JonesCrossley
             // Enable view button
             ViewQuote.IsEnabled = (QuotesList.Items.Count > 0);
         }
+
+        private void QuotesList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

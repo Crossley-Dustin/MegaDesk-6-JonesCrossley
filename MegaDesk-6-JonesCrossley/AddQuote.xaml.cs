@@ -109,5 +109,15 @@ namespace MegaDesk_6_JonesCrossley
                 throw e;
             }
         }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

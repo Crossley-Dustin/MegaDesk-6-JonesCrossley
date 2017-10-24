@@ -12,23 +12,23 @@
             <StackPanel.Background>
                 <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
             </StackPanel.Background>
-            <TextBlock Text="Customer Name"/>
-            <TextBlock Name="CustomerName"/>
-            <TextBlock Text="Quote Date"/>
-            <TextBlock Name="QuoteDate"/>
-            <TextBlock Text="Quote Amount"/>
-            <TextBlock Name="QuoteAmount"/>
-            <TextBlock Text="Rush Order Days"/>
-            <TextBlock Name="RushDays"/>
-            <TextBlock Text="Number Of Drawers"/>
-            <TextBlock Name="NumberDrawers"/>
-            <TextBlock Text="Surface Material"/>
-            <TextBlock Name="SurfaceMaterial"/>
-            <TextBlock Text="Desk Width in Inches"/>
-            <TextBlock Name="DeskWidth"/>
-            <TextBlock Text="Desk Depth in Inches"/>
-            <TextBlock Name="DeskDepth"/>
-            <Button Name="ReturnToSearch" Content="Return To Search" Click="ReturnToSearch_Click"/>
+            <TextBlock Text="Customer Name:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="141,0,135,0" Width="668" TextAlignment="Center" Height="34" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="CustomerName" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="33" FontFamily="Trebuchet MS"/>
+            <TextBlock Text="Quote Date:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="235,0" Width="474" TextAlignment="Center" Height="34" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="QuoteDate" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="34" FontFamily="Trebuchet MS"/>
+            <TextBlock Text="Quote Amount:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="165,0,166,0" Width="613" TextAlignment="Center" Height="34" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="QuoteAmount" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="32" FontFamily="Trebuchet MS"/>
+            <TextBlock Text="Rush Order Days:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="126,0,132,0" Width="686" TextAlignment="Center" Height="33" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="RushDays" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="34" FontFamily="Trebuchet MS"/>
+            <TextBlock Text="Number Of Drawers:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="64,0,66,0" Width="814" TextAlignment="Center" Height="34" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="NumberDrawers" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="33" FontFamily="Trebuchet MS"/>
+            <TextBlock Text="Surface Material:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="144,0,142,0" Width="658" TextAlignment="Center" Height="34" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="SurfaceMaterial" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="34" FontFamily="Trebuchet MS"/>
+            <TextBlock Text="Desk Width in Inches:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="43,0" Width="858" TextAlignment="Center" Height="33" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="DeskWidth" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="34" FontFamily="Trebuchet MS"/>
+            <TextBlock Text="Desk Depth in Inches:" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="43,0" Width="858" TextAlignment="Center" Height="34" FontSize="18" FontFamily="Trebuchet MS" TextDecorations="Underline"/>
+            <TextBlock Name="DeskDepth" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="197,0,195,0" Width="552" TextAlignment="Center" Height="34" FontFamily="Trebuchet MS"/>
+            <Button Name="ReturnToSearch" Content="Return To Search" Click="ReturnToSearch_Click" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="393,0,391,0" Width="160" Height="33" BorderBrush="White" FontFamily="Trebuchet MS"/>
         </StackPanel>
     </Grid>
 </Page>

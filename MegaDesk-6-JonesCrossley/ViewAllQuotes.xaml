@@ -7,15 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loading="Grid_Loading">
-        <StackPanel Orientation="Vertical" Padding="40">
-            <StackPanel.Background>
-                <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
-            </StackPanel.Background>
-            <TextBlock Name="FileContents" MinHeight="100" Height="Auto" MinWidth="100" VerticalAlignment="Top"/>
-            <Button Name="ReturnToMainMenu" Content="Return to Menu" Click="ReturnToMainMenu_Click"/>
-        </StackPanel>
-        
+    <Grid Loading="Grid_Loading">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/green-abstract-wallpaper.jpg"/>
+        </Grid.Background>
+
+        <TextBlock Name="FileContents" MinHeight="100" Height="358" MinWidth="100" VerticalAlignment="Top" Margin="93,124,119,0"/>
+        <Button x:Name="ReturnToMainMenu" Content="Return to Menu" Click="ReturnToMainMenu_Click" Margin="416,546,0,61" BorderBrush="White" Foreground="White"/>
+
+
 
     </Grid>
 </Page>
